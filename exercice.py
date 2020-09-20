@@ -10,9 +10,9 @@ def convert_to_absolute() -> float:
 
 
 def use_prefixes() -> List[str]:
-    prefixes, suffixes = 'JKLMNOP', 'ack'
+    prefixes, suffixe = 'JKLMNOP', 'ack'
 
-    return [""]
+    return [pre+suffixe for pre in prefixes]
 
 
 def prime_integer_summation() -> int:
