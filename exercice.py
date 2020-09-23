@@ -41,22 +41,29 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    return 0
+    result = 1
+    if number != 0:
+        for i in range(number):
+            result *= (number - i)
+    return result
 
 
 def use_continue() -> None:
-    pass
+    for chiffre in range(1, 11):
+        if chiffre == 5:
+            continue
+        print(chiffre)
 
 
 def main() -> None:
     #print(f"La valeur absolue du nombre est {convert_to_absolute()}")
 
-    print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
+    #print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
     #print(f"La somme des nombres de 0 à 100 est: {prime_integer_summation()}")
 
-    #number = 10
-    #print(f"La factiorelle du nombre {number} est: {factorial(number)}")
+    number = 4
+    print(f"La factiorelle du nombre {number} est: {factorial(number)}")
     
     #print(f"L'affichage de la boucle est:")
     #use_continue()
